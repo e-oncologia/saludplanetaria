@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Salud Planetaria</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style type="text/css">
+      body {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        -webkit-text-size-adjust: 100% !important;
+        -ms-text-size-adjust: 100% !important;
+        -webkit-font-smoothing: antialiased !important;
+      }
+      .tableContent img {
+        border: 0 !important;
+        display: block !important;
+        outline: none !important;
+      }
+      a {
+        color: #382f2e;
+        text-decoration: none;
+      }
+
+      p,
+      h1,
+      h2,
+      ul,
+      ol,
+      li,
+      div {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1,
+      h2 {
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: normal;
+        background: transparent !important;
+        border: none !important;
+        line-height: 26px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        table[class="MainContainer"],
+        td[class="cell"] {
+          width: 100% !important;
+          height: auto !important;
+        }
+        td[class="specbundle"] {
+          width: 100% !important;
+          float: left !important;
+          font-size: 13px !important;
+          line-height: 17px !important;
+          display: block !important;
+          padding-bottom: 15px !important;
+        }
+        td[class="specbundle2"] {
+          width: 80% !important;
+          float: left !important;
+          font-size: 13px !important;
+          line-height: 17px !important;
+          display: block !important;
+          padding-bottom: 10px !important;
+          padding-left: 10% !important;
+          padding-right: 10% !important;
+        }
+
+        td[class="spechide"] {
+          display: none !important;
+        }
+        img[class="banner"] {
+          width: 100% !important;
+          height: auto !important;
+        }
+        td[class="left_pad"] {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+      }
+
+      @media only screen and (max-width: 540px) {
+        table[class="MainContainer"],
+        td[class="cell"] {
+          width: 100% !important;
+          height: auto !important;
+        }
+        td[class="specbundle"] {
+          width: 100% !important;
+          float: left !important;
+          font-size: 13px !important;
+          line-height: 17px !important;
+          display: block !important;
+          padding-bottom: 15px !important;
+        }
+        td[class="specbundle2"] {
+          width: 80% !important;
+          float: left !important;
+          font-size: 13px !important;
+          line-height: 17px !important;
+          display: block !important;
+          padding-bottom: 10px !important;
+          padding-left: 10% !important;
+          padding-right: 10% !important;
+        }
+
+        td[class="spechide"] {
+          display: none !important;
+        }
+        img[class="banner"] {
+          width: 100% !important;
+          height: auto !important;
+        }
+        td[class="left_pad"] {
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+      }
+      .centrada {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+      .contentEditable h2.big,
+      .contentEditable h1.big {
+        font-size: 26px !important;
+      }
+
+      .contentEditable h2.bigger,
+      .contentEditable h1.bigger {
+        font-size: 37px !important;
+      }
+
+      td,
+      table {
+        vertical-align: top;
+      }
+      td.middle {
+        vertical-align: middle;
+      }
+
+      .rosa {
+        color: #cc19cc;
+      }
+      .celeste {
+        color: #73edff;
+      }
+      .azul {
+        color: #000078;
+      }
+      .link1 {
+        color: #000078;
+        font-size: 18px;
+        border: 10px solid #73edff;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        background: #73edff;
+        transition: 0.5s;
+      }
+      .link1:hover {
+        border: 10px solid #000078;
+        background: #000078;
+      }
+      .link2 {
+        color: #ffffff;
+        font-size: 18px;
+        border: 10px solid #000078;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+        -webkit-border-radius: 25px;
+        background: #000078;
+        transition: 0.5s;
+      }
+      .link2:hover {
+        border: 10px solid #73edff;
+        background: #73edff;
+      }
+
+      p {
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 21px;
+        color: #aaaaaa;
+      }
+
+      .bgItem {
+        background: #ffffff;
+      }
+      .bgBody {
+        background: #ffffff;
+      }
+
+      img {
+        outline: none;
+        text-decoration: none;
+        -ms-interpolation-mode: bicubic;
+        width: auto;
+        max-width: 100%;
+        clear: both;
+        display: block;
+        float: none;
+      }
+    </style>
+
+    <script type="colorScheme" class="swatch active">
+      {
+          "name":"Default",
+          "bgBody":"ffffff",
+          "link":"27A1E5",
+          "color":"AAAAAA",
+          "bgItem":"ffffff",
+          "title":"444444"
+      }
+    </script>
+  </head>
+  <body
+    paddingwidth="0"
+    paddingheight="0"
+    bgcolor="#d1d3d4"
+    style="
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      background-repeat: repeat;
+      width: 100% !important;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      -webkit-font-smoothing: antialiased;
+    "
+    offset="0"
+    toppadding="0"
+    leftpadding="0"
+  >
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tbody>
+        <tr>
+          <td>
+            <table
+              width="600"
+              border="0"
+              cellspacing="0"
+              cellpadding="0"
+              align="center"
+              bgcolor="#ffffff"
+              style="font-family: helvetica, sans-serif"
+              class="MainContainer"
+            >
+              <!-- =============== START HEADER =============== -->
+              <tbody>
+                <tr>
+                  <td>
+                    <table
+                      width="100%"
+                      border="0"
+                      cellspacing="0"
+                      cellpadding="0"
+                    >
+                      <tbody>
+                        <tr>
+                          <td valign="top" width="20">&nbsp;</td>
+                          <td>
+                            <table
+                              width="100%"
+                              border="0"
+                              cellspacing="0"
+                              cellpadding="0"
+                            >
+                              <tbody>
+                                <tr>
+                                  <td class="movableContentContainer">
+                                    <!-- =============== END HEADER =============== -->
+                                    <!-- =============== START BODY =============== -->
+
+                                    <br />
+                                    <br />
+
+                                    <div
+                                      class="movableContent"
+                                      style="
+                                        border: 0px;
+                                        padding-top: 0px;
+                                        position: relative;
+                                      "
+                                    >
+                                      <table
+                                        width="100%"
+                                        border="0"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td
+                                              style="
+                                                border: 1px solid #eeeeee;
+                                                border-radius: 6px;
+                                                -moz-border-radius: 6px;
+                                                -webkit-border-radius: 6px;
+                                              "
+                                            >
+                                              <table
+                                                width="100%"
+                                                border="0"
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                              >
+                                                <tbody>
+                                                  <tr>
+                                                    <td valign="top" width="40">
+                                                      &nbsp;
+                                                    </td>
+                                                    <td>
+                                                      <table
+                                                        width="100%"
+                                                        border="0"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        align="center"
+                                                      >
+                                                        <tr>
+                                                          <td height="25"></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div
+                                                              class="contentEditableContainer contentTextEditable"
+                                                            >
+                                                              <div
+                                                                class="contentEditable"
+                                                                style="
+                                                                  text-align: center;
+                                                                "
+                                                              >
+                                                                <h1 class="azul">
+                                                                  Jornada sobre
+                                                                  Vacunación en
+                                                                  la era de la
+                                                                  Salud
+                                                                  Planetaria
+                                                                </h1>
+                                                                <h3 class="celeste">28 octubre 2020</h3>
+                                                                <img
+                                                                  src="http://symposium.uoc.edu/_files/_event/_54136/_header_img/_69735.jpg"
+                                                                />
+                                                                <br>
+                                                                <img
+                                                                  src="https://donostia.impacthub.net/wp-content/uploads/sites/123/2019/06/UOC-1.jpg" height="80" class="centrada">
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td height="24"></td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                    <td valign="top" width="40">
+                                                      &nbsp;
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+
+                                    <div
+                                      class="movableContent"
+                                      style="
+                                        border: 0px;
+                                        padding-top: 0px;
+                                        position: relative;
+                                      "
+                                    >
+                                      <table
+                                        width="100%"
+                                        border="0"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td height="40"></td>
+                                          </tr>
+                                          <tr>
+                                            <td
+                                              style="
+                                                background: #f6f6f6;
+                                                border-radius: 6px;
+                                                -moz-border-radius: 6px;
+                                                -webkit-border-radius: 6px;
+                                              "
+                                            >
+                                              <table
+                                                width="100%"
+                                                border="0"
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                              >
+                                                <tbody>
+                                                  <tr>
+                                                    <td width="40" valign="top">
+                                                      &nbsp;
+                                                    </td>
+                                                    <td valign="top">
+                                                      <table
+                                                        width="100%"
+                                                        border="0"
+                                                        cellspacing="0"
+                                                        cellpadding="0"
+                                                        align="center"
+                                                      >
+                                                        <tr>
+                                                          <td height="25"></td>
+                                                        </tr>
+                                                        <tr>
+                                                          <td>
+                                                            <div
+                                                              class="contentEditableContainer contentTextEditable"
+                                                            >
+                                                              <div
+                                                                class="contentEditable"
+                                                              >
+                                                                <p>
+                                                                  Nos complace invitarles a la <span class="azul">Jornada sobre Vacunación en la era de la Salud Planetaria</span>, enmarcada en la celebración del décimo aniversario de los <span class="azul">Estudios de Ciencias de la Salud de la UOC (ECS)</span>. Es un privilegio para las áreas de conocimiento de Prevención del Cáncer y Salud Planetaria de la UOC poder participar en la efeméride de los ECS con un webinar centrado en la vacunación y su impacto en Salud Planetaria.
+                                                                </p>
+                                                                <br />
+                                                                <p>Esta jornada es de especial interés para los profesionales del ámbito de las Ciencias de la Salud como para la población en general. En la <span class="azul">Jornada sobre Vacunación en la era de la Salud Planetaria</span> se abordarán aspectos clave: el origen de los virus, la vacunación, el impacto en la salud planetaria, la esperanza de vida y aspectos relacionados con la bioética.</p>
+                                                              </div>
+                                                             
+                                                              <br />
+                                                             
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                        
+                                                      <tr>
+                                                        <td>
+                                                          <div class='contentEditableContainer contentTextEditable'>
+                                
+                                                          <div style='text-align: left;'>
+                                                          <p>El acto se llevará a cabo de manera virtual y tendrá lugar el <span class="azul">miércoles 28 de octubre a las 18:00 pm (hora peninsular)</span> por streaming y en lengua castellana. En este enlace podéis encontrar toda la información sobre el webinar: </p>
+                                                          <br>
+                                                         
+                                                          <br>
+                                                          <div
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        ><a
+                                                        target="_blank"
+                                                        href="http://symposium.uoc.edu/54136/detail/jornada-sobre-vacunacio-en-lera-de-la-salut-planetaria.html"
+                                                        class="link2 center"
+                                                        style="
+                                                          color: #fff;
+                                                        "
+                                                        >programa</a
+                                                      >
+                                                          
+                                                        </div>
+                                                          
+                                                          <br>
+                                                          <br>
+                                                          <p>Para ir calentando motores con la celebración de estos primeros 10 años de los ECS os hacemos llegar esta grabación realizada por el director de los Estudios de Ciencias de la Salud (Dr. Ramon Gomis):</p>
+                                                          <br>
+
+                                                         
+
+                                                          
+                                                        </div>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height='24'></td>
+                                                      </tr>
+                                                      </table>
+                                                    </td>
+                                                  <td width="40" valign="top">&nbsp;</td>
+                                                 </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                      </table>
+                                      </div>
+                                      <div
+                                      style="
+                                        text-align: center;
+                                      "
+                                    >
+                                    <br>
+                                    <p class="azul">Vídeo “Celebración de los 10 años ECS”</p>
+
+                                    <br>
+                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/txL5XB9OP0s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <br>
+                                    <br>
+                                    </div>
+
+
+                                    <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+                                      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr>
+                                          <td height="40"></td>
+                                        </tr>
+                                        <tr>
+                                          <td style="background:#F6F6F6; border-radius:6px;-moz-border-radius:6px;-webkit-border-radius:6px">
+                                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                  <tr>
+                                                    <td width="40" valign="top">&nbsp;</td>
+                                                    <td valign="top">
+                                                      <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                                                      <tr>
+                                                        <td height='25'></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          <div class='contentEditableContainer contentTextEditable'>
+                                
+                                                          <div style='text-align: left;'>
+                                                         
+                                                      
+                                                       
+
+                                                          <p>Dado que la temática puede ser de su interés, agradeceríamos que hicieran extensivo este mensaje a sus redes de comunicación, a sus equipos y a aquellas personas que consideren que les pueda interesar.</p>
+                                                          <br>
+
+                                                   
+                                                        
+                                                          
+                                                          <div
+                                                          style="
+                                                            text-align: center;
+                                                          "
+                                                        ><h3 class="azul"><b>¡Os esperamos!</b></h3>
+                                                          <br>
+                                                          
+                                                        </div>
+                                                        <p>Dr. Ramon Gomis. Director de los Estudios de Ciencias de la Salud, UOC.</p>
+                                                            <p> Dr. F. Xavier Bosch.  Profesor asociado de los Estudios de Ciencias de la Salud, UOC y Consultor emérito del ICO.
+                                                            </p>
+                                                          </div>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td height='24'></td>
+                                                      </tr>
+                                                      </table>
+                                                    </td>
+                                                  <td width="40" valign="top">&nbsp;</td>
+                                                 </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                      </table>
+                                      </div>
+
+
+
+                                    <div
+                                      class="movableContent"
+                                      style="
+                                        border: 0px;
+                                        padding-top: 0px;
+                                        position: relative;
+                                      "
+                                    >
+                                      <table
+                                        width="100%"
+                                        border="0"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td valign="top" width="580">
+                                              <div
+                                                class="contentEditableContainer contentImageEditable"
+                                              >
+                                                <div
+                                                  class="contentEditable"
+                                                  style="text-align: center"
+                                                >
+                                                  <img
+                                                    class="banner"
+                                                    src=""
+                                                    alt=""
+                                                    title=""
+                                                    width=""
+                                                    height=""
+                                                    border="0"
+                                                  />
+                                                </div>
+                                              </div>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+
+                                    <div
+                                      class="movableContent"
+                                      style="
+                                        border: 0px;
+                                        padding-top: 0px;
+                                        position: relative;
+                                      "
+                                    >
+                                      <table
+                                        width="100%"
+                                        border="0"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td height="40" colspan="3"></td>
+                                          </tr>
+                                          <tr>
+                                            <td colspan="3">
+                                              <hr
+                                                style="
+                                                  height: 1px;
+                                                  background: #dddddd;
+                                                  border: none;
+                                                "
+                                              />
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+
+                                    <!-- =============== END BODY =============== -->
+                                    <!-- =============== START FOOTER =============== -->
+
+                                    <div
+                                      class="movableContent"
+                                      style="
+                                        border: 0px;
+                                        padding-top: 0px;
+                                        position: relative;
+                                      "
+                                    >
+                                      <table
+                                        width="100%"
+                                        border="0"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td height="48"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table
+                                                width="100%"
+                                                border="0"
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                              >
+                                                <tbody>
+                                                  <tr>
+                                                    <td
+                                                      valign="top"
+                                                      width="90"
+                                                      class="spechide"
+                                                    >
+                                                      &nbsp;
+                                                    </td>
+                                                    <td>
+                                                      <table
+                                                        width="100%"
+                                                        cellpadding="0"
+                                                        cellspacing="0"
+                                                        align="center"
+                                                      >
+                                                        <tr>
+                                                          <td>
+                                                            <div
+                                                              class="contentEditableContainer contentTextEditable"
+                                                            >
+                                                              <div
+                                                                class="contentEditable"
+                                                                style="
+                                                                  text-align: center;
+                                                                  color: #aaaaaa;
+                                                                "
+                                                              >
+                                                                <p>
+                                                                  <span
+                                                                    class="celeste"
+                                                                    >Copyright ©
+                                                                    2020
+                                                                    e-oncología.</span
+                                                                  >
+                                                                  Todos los
+                                                                  derechos
+                                                                  reservados.
+                                                                </p>
+                                                                <p>
+                                                                  Si te ha
+                                                                  llegado al
+                                                                  spam o
+                                                                  promociones,
+                                                                  traslada el
+                                                                  email a la
+                                                                  bandeja
+                                                                  principal para
+                                                                  asegurarte de
+                                                                  que no vuelva
+                                                                  a pasar.
+                                                                </p>
+                                                              </div>
+                                                            </div>
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                    <td
+                                                      valign="top"
+                                                      width="90"
+                                                      class="spechide"
+                                                    >
+                                                      &nbsp;
+                                                    </td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <div
+                                      class="movableContent"
+                                      style="
+                                        border: 0px;
+                                        padding-top: 0px;
+                                        position: relative;
+                                      "
+                                    >
+                                      <table
+                                        width="100%"
+                                        border="0"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                      >
+                                        <tbody>
+                                          <tr>
+                                            <td height="40"></td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <table
+                                                width="100%"
+                                                border="0"
+                                                cellspacing="0"
+                                                cellpadding="0"
+                                              >
+                                                <tbody></tbody>
+                                              </table>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td height="40"></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+                                      <!-- =============== END FOOTER =============== -->
+                                    </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                          <td valign="top" width="20">&nbsp;</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
